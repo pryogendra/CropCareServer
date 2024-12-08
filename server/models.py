@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
     location = models.CharField(max_length=255)
-    mobile = models.CharField(max_length=15)
-    pincode = models.CharField(max_length=6)
+    mobile = models.CharField(max_length=18)
+    pincode = models.CharField(max_length=15, null=True, blank=True)
     profile_image = models.ImageField(upload_to='profile_images/', null=True, blank=True)
 
     def __str__(self):
