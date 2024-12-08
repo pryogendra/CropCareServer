@@ -6,7 +6,7 @@ class UserProfile(models.Model):
     location = models.CharField(max_length=255)
     mobile = models.CharField(max_length=18)
     pincode = models.CharField(max_length=15, null=True, blank=True)
-    profile_image = models.ImageField(upload_to='profile_images/', null=True, blank=True)
+    profile_image = models.ImageField(upload_to='media/', null=True, blank=True)
 
     def __str__(self):
         return self.user.username
