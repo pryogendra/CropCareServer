@@ -5,7 +5,7 @@ from .models import UserProfile
 class UserRegistrationSerializer(serializers.ModelSerializer):
     location = serializers.CharField(max_length=255)
     mobile = serializers.CharField(max_length=15)
-    pincode = serializers.CharField(max_length=6)
+    pincode = serializers.CharField(max_length=6, allow_null=True)
     profile_image = serializers.ImageField(required=False, allow_null=True)
     class Meta:
         model = User
@@ -14,7 +14,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         location = validated_data.pop('location')
         mobile = validated_data.pop('mobile')
-        pincode = validated_data.pop('pincode')
+        pincode = validated_data.pop('pincode',None)
         profile_image = validated_data.pop('profile_image', None)
 
         user = User.objects.create_user(
