@@ -5,7 +5,7 @@ from .models import UserProfile
 class UserRegistrationSerializer(serializers.ModelSerializer):
     location = serializers.CharField(max_length=255)
     mobile = serializers.CharField(max_length=15)
-    pincode = serializers.CharField(max_length=6, allow_null=True)
+    pincode = serializers.CharField(max_length=15, allow_null=True)
     profile_image = serializers.ImageField(required=False, allow_null=True)
     class Meta:
         model = User
