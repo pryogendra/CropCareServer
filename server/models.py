@@ -61,6 +61,11 @@ class Govt_Scheme(models.Model):
     apply_process=models.TextField()
     contact=models.CharField(max_length=5000, blank=True, null=True)
 
+
+    def __str__(self):
+        return self.title
+
+
 class Notification(models.Model):
     user=models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='notification')
     message=models.CharField(max_length=700, blank=True, null=True)
