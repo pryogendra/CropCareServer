@@ -3,7 +3,7 @@ from django.http import HttpResponse,JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework import status
 from .serializers import UserRegistrationSerializer, UserLoginSerializer
-from .models import UserProfile,Post
+from .models import UserProfile,Post,Govt_Scheme
 from django.shortcuts import render, get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 import base64
@@ -11,6 +11,7 @@ from io import BytesIO
 from PIL import Image
 from django.core.files.base import ContentFile
 from django.contrib.auth.models import User
+from django.core.paginator import Paginator # used for pagination
 
 
 def image_to_base64(urlPath):
@@ -32,86 +33,147 @@ def register(request):
         serializer = UserRegistrationSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response({'message': 'User registered successfully!'}, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse({'message': 'User registered successfully!'}, status=status.HTTP_201_CREATED)
+        return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['POST'])
 def login_user(request):
     if request.method == 'POST':
         serializer = UserLoginSerializer(data=request.data)
         if serializer.is_valid():
-            return Response({"message": "Login successful!"}, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse({"message": "Login successful!"}, status=status.HTTP_200_OK)
+        return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['POST'])
 def post(request):
-    data=[]
-    posts = Post.objects.all()
-    # print(f"Current User : {posts[1].user}")
-    #profile=UserProfile.objects.filter(user=posts.user)
-    for post in posts:
-        p={
-        'post_id':post.id,
-        'username':post.user.user.username,
-        'avtar':post.user.profile_image.url if post.user.profile_image else None,
-        'profile_pic':post.user.profile_image.url if post.user.profile_image else None,
-        'data':post.image.url if post.image else None,
-        'image':post.user.profile_image.url if post.user.profile_image else None,
-        'caption':post.caption,
-        'likes':post.likes,
-        'comments':post.comments,
-        'posted_ago':post.posted_ago,
-        }
-        data.append(p)
-    # print(data)
-    #return HttpResponse("Posts")
-    return JsonResponse({'data':data},status=status.HTTP_200_OK)
+    if request.method=='POST':
+        data=[]
+        CURRENT_USER = request.POST.get('CURRENT_USER')
+        user=User.objects.get(username=CURRENT_USER)
+        obj=UserProfile.objects.get(user=user)
+        posts = Post.objects.all()
+        for post in posts:
+            p={
+            'post_id':post.id,
+            'username':post.user.user.username, # temp user
+            'avtar':image_to_base64(post.user.profile_image.path) if post.user.profile_image else None, # posted profile
+            'profile_pic':image_to_base64(obj.profile_image.path) if obj.profile_image else None, # user profile
+            'data':image_to_base64(post.image.path) if post.image else None,
+            'data_type':post.data_type,
+            'caption':post.caption,
+            'likes':post.likes,
+            'comments':post.comments,
+            'posted_ago':post.posted_ago,
+            }
+            data.append(p)
+        return JsonResponse({'data':data},status=status.HTTP_200_OK)
 
-@csrf_exempt
+@api_view(['POST'])
 def profile(request):
-    CURRENT_USER = request.POST.get('CURRENT_USER')
-    user=User.objects.get(username=CURRENT_USER)
-    obj=UserProfile.objects.get(user=user)
-    data={
-        'username':obj.user.username,
-        'email':user.email,
-        'mobile':obj.mobile,
-        'location':obj.location,
-        'pincode':obj.pincode,
-        'profile_image': image_to_base64(obj.profile_image.path) if obj.profile_image else None,
-    }
-    # print(data)
-    return JsonResponse({'data':data},status=status.HTTP_200_OK)
+    if request.method=='POST':
+        CURRENT_USER = request.POST.get('CURRENT_USER')
+        user=User.objects.get(username=CURRENT_USER)
+        obj=UserProfile.objects.get(user=user)
+        data={
+            'username':obj.user.username,
+            'email':user.email,
+            'mobile':obj.mobile,
+            'location':obj.location,
+            'pincode':obj.pincode,
+            'profile_image': image_to_base64(obj.profile_image.path) if obj.profile_image else None,
+        }
+        return JsonResponse({'data':data},status=status.HTTP_200_OK)
 
 @api_view(['POST'])
 def updateprofile(request):
     try :
-        CURRENT_USER = request.POST.get('CURRENT_USER')
-        file_name=f'{CURRENT_USER}_profile.jpg'
-        email=request.POST.get('email')
-        mobile=request.POST.get('mobile')
-        location=request.POST.get('location')
-        pincode=request.POST.get('pincode')
-        image_base64=request.POST.get('profile_image')
-        user=User.objects.get(username=CURRENT_USER)
-        obj=UserProfile.objects.get(user=user)
-        if image_base64 is not None :
-            image_io=base64_to_image(image_base64)
-            obj.profile_image.save(file_name, ContentFile(image_io.read()), save=True)
-        if email:
-            user.email=email
-            user.save()
-        if mobile:
-            obj.mobile=mobile
-        if location:
-            obj.location=location
-        if pincode:
-            obj.pincode=pincode
-        obj.save()
-        return JsonResponse({'message': 'Profile Updated successfully','status':'!! Success !!'})
+        if request.method=='POST':
+            CURRENT_USER = request.POST.get('CURRENT_USER')
+            file_name=f'{CURRENT_USER}_profile.jpg'
+            email=request.POST.get('email')
+            mobile=request.POST.get('mobile')
+            location=request.POST.get('location')
+            pincode=request.POST.get('pincode')
+            image_base64=request.POST.get('profile_image')
+            user=User.objects.get(username=CURRENT_USER)
+            obj=UserProfile.objects.get(user=user)
+            if image_base64 is not None :
+                image_io=base64_to_image(image_base64)
+                obj.profile_image.save(file_name, ContentFile(image_io.read()), save=True)
+            if email:
+                user.email=email
+                user.save()
+            if mobile:
+                obj.mobile=mobile
+            if location:
+                obj.location=location
+            if pincode:
+                obj.pincode=pincode
+            obj.save()
+            return JsonResponse({'message': 'Profile Updated successfully','status':'!! Success !!'})
     except Exception as e :
         return JsonResponse({'message': f'{e} : Profile not Updated.','status':'!! Error !!'})
 
+@api_view(['POST'])
+def schemes(request):
+    if request.method=='POST':
+        data=[]
+        obj=Govt_Scheme.objects.all()
+        for sch in obj:
+            data.append(sch.title)
+
+        return JsonResponse({'data':data},status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+def schemedetail(request):
+    if request.method=='POST':
+        id=request.POST.get('id')
+        obj=Govt_Scheme.objects.filter(id=id).first()
+        print("Govt : ",obj)
+        if obj is None:
+            print("Govt_Scheme not found")
+        else:
+            data={
+            'title':obj.title,
+            'discription':obj.discription,
+            'benefit':obj.benefit,
+            'eligibility':obj.eligibility,
+            'document':obj.document,
+            'apply_process':obj.apply_process,
+            'contact':obj.contact,
+            }
+
+            return JsonResponse({'data':data},status=status.HTTP_200_OK)
+
+
+
+def add_scheme(request):
+    schemes = {
+            "Gramin Bhandaran Yojana": {
+                "Description": "Promotes the construction of storage facilities for farmers.",
+                "Benefits": "Financial support for building warehouses.",
+                "Eligibility": "Farmers, NGOs, cooperatives.",
+                "Documents": "Project proposal, Aadhaar, land records.",
+                "How to Apply": "Apply through nabard.org or district agriculture offices.",
+                "Contact": "1800-123-1551"
+            }
+        }
+    for i in schemes.keys():
+        govt=Govt_Scheme(
+            title=i,
+            discription=schemes[i]['Description'],
+            benefit=schemes[i]['Benefits'],
+            eligibility=schemes[i]['Eligibility'],
+            document=schemes[i]['Documents'],
+            apply_process=schemes[i]['How to Apply'],
+            contact=schemes[i]['Contact'],
+        )
+        govt.save()
+
+        # print(i,schemes[i]['Description'],schemes[i]['Benefits'],
+        # schemes[i]['Eligibility'],schemes[i]['Documents'],
+        # schemes[i]['How to Apply'],schemes[i]['Contact'],)
+    return HttpResponse("scheme")
 # @api_view(['POST']) # demo VIEW
 # def upload_image(request):
 #     if request.method == 'POST':

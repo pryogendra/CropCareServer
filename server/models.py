@@ -16,6 +16,7 @@ class UserProfile(models.Model):
 class Post(models.Model):
     user = models.ForeignKey(UserProfile, related_name='posts', on_delete=models.CASCADE)
     image = models.ImageField(upload_to='posts/')
+    data_type=models.CharField(max_length=200, default='jpg')
     caption = models.CharField(max_length=9255)
     likes = models.IntegerField()
     comments = models.IntegerField()
@@ -61,10 +62,8 @@ class Govt_Scheme(models.Model):
     apply_process=models.TextField()
     contact=models.CharField(max_length=5000, blank=True, null=True)
 
-
     def __str__(self):
         return self.title
-
 
 class Notification(models.Model):
     user=models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='notification')
