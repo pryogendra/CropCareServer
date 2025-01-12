@@ -52,7 +52,6 @@ class Post(models.Model):
             years = diff.days // 365
             return f"{years} year{'s' if years > 1 else ''} ago"
 
-
 class Govt_Scheme(models.Model):
     title=models.CharField(max_length=5000, blank=True, null=True)
     discription=models.TextField()
@@ -64,6 +63,31 @@ class Govt_Scheme(models.Model):
 
     def __str__(self):
         return self.title
+
+class Shopping(models.Model):
+    type=models.CharField(max_length=200)
+    title=models.CharField(max_length=500)
+    image=models.ImageField(upload_to='Shopping/', null=True, blank=True)
+    info1=models.TextField()
+    info2=models.TextField()
+
+    def __str__(self):
+        return f'{self.title} : {self.type}'
+
+class Contactus(models.Model):
+    name=models.CharField(max_length=500)
+    email=models.CharField(max_length=1000)
+    message=models.TextField()
+
+    def __str__(self):
+        return f'{self.name} : {self.message[:20]}...'
+
+class FeedBack(models.Model):
+    name=models.CharField(max_length=200)
+    message=models.TextField()
+
+    def __str__(self):
+        return f'{self.name} : {self.message[:20]}...'
 
 class Notification(models.Model):
     user=models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='notification')

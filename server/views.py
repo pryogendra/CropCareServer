@@ -3,7 +3,7 @@ from django.http import HttpResponse,JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework import status
 from .serializers import UserRegistrationSerializer, UserLoginSerializer
-from .models import UserProfile,Post,Govt_Scheme
+from .models import *
 from django.shortcuts import render, get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 import base64
@@ -11,7 +11,7 @@ from io import BytesIO
 from PIL import Image
 from django.core.files.base import ContentFile
 from django.contrib.auth.models import User
-from django.core.paginator import Paginator # used for pagination
+from django.core.paginator import Paginator
 
 
 def image_to_base64(urlPath):
@@ -55,8 +55,8 @@ def post(request):
         for post in posts:
             p={
             'post_id':post.id,
-            'username':post.user.user.username, # temp user
-            'avtar':image_to_base64(post.user.profile_image.path) if post.user.profile_image else None, # posted profile
+            'username':post.user.user.username, # posted user
+            'avtar':image_to_base64(post.user.profile_image.path) if post.user.profile_image else None, # posted user profile
             'profile_pic':image_to_base64(obj.profile_image.path) if obj.profile_image else None, # user profile
             'data':image_to_base64(post.image.path) if post.image else None,
             'data_type':post.data_type,
@@ -145,7 +145,45 @@ def schemedetail(request):
 
             return JsonResponse({'data':data},status=status.HTTP_200_OK)
 
+@api_view(['POST'])
+def shopping(request):
+    if request.method=='POST':
+        data=[]
+        prods=Shopping.objects.all().order_by('type')
+        for prod in prods:
+            p={
+            'product_id':prod.id,
+            'type':prod.type,
+            'title':prod.title,
+            'image':image_to_base64(prod.image.path) if prod.image else None,
+            'info1':prod.info1,
+            'info2':prod.info2,
+            }
+            data.append(p)
+        #return HttpResponse("shopping")
+        return JsonResponse({'data':data},status=status.HTTP_200_OK)
 
+@api_view(['POST'])
+def contactus(request):
+    if request.method=='POST':
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        message=request.POST.get('message')
+
+        contact=ContactUs(name=name, email=email, message=message)
+        contact.save()
+        return JsonResponse({'message':'sucess'},status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+def feedback(request):
+    if request.method=='POST':
+        name=request.POST.get('name')
+        message=request.POST.get('message')
+
+        feed=FeedBack(name=name, message=message)
+        feed.save()
+
+        return JsonResponse({'message':'sucess'}, status=status.HTTP_200_OK)
 
 def add_scheme(request):
     schemes = {

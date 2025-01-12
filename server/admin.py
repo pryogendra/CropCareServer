@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import UserProfile,Post,Notification,Govt_Scheme
+from .models import *
 from django.contrib.admin.sites import site
 from django.contrib.admin import AdminSite
 
@@ -16,3 +16,5 @@ admin.site.index_title = "Dashboard"
 admin.site.register(UserProfile)
 admin.site.register([Post,Notification])
 admin.site.register(Govt_Scheme)
+admin.site.register(Shopping)
+admin.site.register([Contactus,FeedBack])
