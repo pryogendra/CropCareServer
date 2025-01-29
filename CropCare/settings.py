@@ -108,9 +108,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'staticfiles'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 
 # Default primary key field type
@@ -122,3 +123,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #media urls
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+
+#Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "thecropcare.team@gmail.com"
+EMAIL_HOST_PASSWORD = "zggkqkpjzmpbgdzq"

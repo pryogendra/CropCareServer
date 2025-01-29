@@ -1,4 +1,4 @@
-#!/home/pryog/PycharmProjects/CropCare_Server/venv/bin/python3
+#!/home/pryog/PycharmProjects/CropCareServer/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
