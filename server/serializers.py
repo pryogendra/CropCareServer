@@ -14,7 +14,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         location = validated_data.pop('location')
         mobile = validated_data.pop('mobile')
-        pincode = validated_data.pop('pincode', None)
+        pincode = validated_data.pop('pincode')
         profile_image = validated_data.pop('profile_image', None)
 
         user = User.objects.create_user(

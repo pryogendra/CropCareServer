@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        input {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        .company-info {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <p>Thank you for registering with <b>Crop Care</b>! To complete the registration process, Please enter your information below and click the "Register" button.</p>
+
+        <!-- <form action="{% url 'register' %}" method="POST"> -->
+        <form action="{{url}}/register/" method="post">
+          <!-- {% csrf_token %} -->
+            <label>Enter Username :</label><br><br>
+            <input type="text" name="username" required placeholder="Name"><br><br>
+
+            <label>Enter your Email :</label><br><br>
+            <input type="email" name="email" required placeholder="youremail@domain.name"><br><br>
+
+            <label>Enter your password :</label><br><br>
+            <input type="text" name="password" required placeholder="*********"><br><br>
+
+            <label>Enter your location:</label><br><br>
+            <input type="text" name="location" required placeholder="abc, xyz"><br><br>
+
+            <label>Enter your Pincode:</label><br><br>
+            <input type="text" name="pincode" required placeholder="123456"><br><br>
+
+            <label>Enter your Mobile no:</label><br><br>
+            <input type="text" name="mobile" required placeholder="+1234567890"><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p><strong>Why is this necessary?</strong> Confirming that your account is linked to the correct contact information. It also helps us to provide you with important updates, security notifications, and personalized offers.</p>
+
+        <p><strong>Your information is safe with us:</strong> We value your privacy and will never share your personal data with third parties without your consent. For more information, please review our <a href="#">Privacy Policy</a>.</p>
+
+        <div class="footer">
+            <p>If you did not want to register with <b>Crop Care</b>, please ignore this email. If you have any questions, feel free to contact our support team.</p>
+        </div>
+
+        <div class="company-info">
+            <p><strong>Crop Care Pvt. Ltd.</strong><br>
+               TCSC Campus<br>
+               Kandivali East, Mumbai<br>
+               Email: thecropcare.team@gmail.com<br>
+               Phone: +91 6391348273</p>
+        </div>
+    </div>
+</body>
+</html>

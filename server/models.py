@@ -7,7 +7,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
     location = models.CharField(max_length=255)
     mobile = models.CharField(max_length=18)
-    pincode = models.CharField(max_length=15, null=True, blank=True)
+    pincode = models.CharField(max_length=15, null=True, blank=True, default="0")
     profile_image = models.ImageField(upload_to='media/', null=True, blank=True)
 
     def __str__(self):

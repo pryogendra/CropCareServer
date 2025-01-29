@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login
 from django.http import HttpResponse,JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework import status
+from CropCare.settings import EMAIL_HOST_USER
 from .serializers import UserRegistrationSerializer, UserLoginSerializer
 from .models import *
 from django.shortcuts import render, get_object_or_404
@@ -12,6 +13,10 @@ from PIL import Image
 from django.core.files.base import ContentFile
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator
+from django.core.mail import send_mail, EmailMultiAlternatives
+from django.conf import settings
+from django.template.loader import render_to_string
+from django.contrib.auth.models import User
 
 
 def image_to_base64(urlPath):
@@ -28,13 +33,195 @@ def base64_to_image(image_base64,format="JPEG"):
     return image_io
 
 @api_view(['POST'])
+def emailregister(request):
+    if request.method=='POST':
+        email=request.POST.get('email')
+        # email='pryogendra95449@gmail.com'
+        text_content ="""Please fill the form given below:
+    """
+        html_content = render_to_string("emailregister.html")
+        try:
+            msg = EmailMultiAlternatives(
+                "Register",
+                text_content,
+                settings.EMAIL_HOST_USER,
+                [email],
+                )
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+            return HttpResponse("""
+            <div
+                style="background-color: #28a745;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Success! Your operation was completed successfully.
+            </div>
+            """)
+            # return JsonResponse(status=status.HTTP_200_OK)
+        except:
+            return HttpResponse("""
+            <div
+                style="background-color: #dc3545;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Error! Something went wrong.
+            </div>
+            """)
+
+@api_view(['POST'])
 def register(request):
     if request.method == 'POST':
         serializer = UserRegistrationSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse({'message': 'User registered successfully!'}, status=status.HTTP_201_CREATED)
-        return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return HttpResponse("""
+            <div
+                style="background-color: #28a745;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Success! Your registration was completed successfully.
+            </div>
+            """)
+        return HttpResponse("""
+        <div
+            style="background-color: #dc3545;
+            color: white; padding: 10px;
+            border-radius: 5px;
+            text-align: center;">
+            Error! Something went wrong.
+        </div>
+        """)
+
+@api_view(['POST'])
+def forgetpassword(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+
+        try:
+            user = User.objects.get(email=email)
+            text_content = """Please fill the form given below:"""
+            html_content = render_to_string("forgetpassword.html")
+            try:
+                msg = EmailMultiAlternatives(
+                    "Reset Password",
+                    text_content,
+                    settings.EMAIL_HOST_USER,
+                    [email],
+                )
+                msg.attach_alternative(html_content, "text/html")
+                msg.send()
+                return HttpResponse("""
+                    <div style="background-color: #28a745; color: white; padding: 10px; border-radius: 5px; text-align: center;">
+                        Success! Your operation was completed successfully.
+                    </div>
+                    <div style="margin-top: 40px;text-align: center;font-size: 12px;color: #666;">
+                        <p><strong>Crop Care Pvt. Ltd.</strong><br>
+                           TCSC Campus<br>
+                           Kandivali East, Mumbai<br>
+                           Email: thecropcare.team@gmail.com<br>
+                           Phone: +91 6391348273</p>
+                    </div>
+                """)
+            except Exception as e:
+                return HttpResponse(f"""
+                    <div style="background-color: #dc3545; color: white; padding: 10px; border-radius: 5px; text-align: center;">
+                        Error! Something went wrong: {str(e)}
+                    </div>
+                    <div style="margin-top: 40px;text-align: center;font-size: 12px;color: #666;">
+                        <p><strong>Crop Care Pvt. Ltd.</strong><br>
+                           TCSC Campus<br>
+                           Kandivali East, Mumbai<br>
+                           Email: thecropcare.team@gmail.com<br>
+                           Phone: +91 6391348273</p>
+                    </div>
+                """)
+        except User.DoesNotExist:
+            send_mail(
+                "Alert!",
+                "Your email is not registered in the CropCare Pvt. Ltd.",
+                settings.EMAIL_HOST_USER,
+                [email],
+                fail_silently=False,
+            )
+            return HttpResponse("""
+                <div style="background-color: #dc3545; color: white; padding: 10px; border-radius: 5px; text-align: center;">
+                    Error! Your email is not registered in our system.
+                </div>
+                <div style="margin-top: 40px;text-align: center;font-size: 12px;color: #666;">
+                    <p><strong>Crop Care Pvt. Ltd.</strong><br>
+                       TCSC Campus<br>
+                       Kandivali East, Mumbai<br>
+                       Email: thecropcare.team@gmail.com<br>
+                       Phone: +91 6391348273</p>
+                </div>
+            """)
+    else:
+        return HttpResponse("""
+        <div
+            style="background-color: #dc3545;
+            color: white; padding: 10px;
+            border-radius: 5px;
+            text-align: center;">
+            Error! Something went wrong.
+        </div>
+        <div style="margin-top: 40px;text-align: center;font-size: 12px;color: #666;">
+            <p><strong>Crop Care Pvt. Ltd.</strong><br>
+               TCSC Campus<br>
+               Kandivali East, Mumbai<br>
+               Email: thecropcare.team@gmail.com<br>
+               Phone: +91 6391348273</p>
+        </div>
+        """)
+
+@api_view(['POST'])
+def newPassword(request):
+    if request.method=='POST':
+        pass1=request.POST.get('password1')
+        pass2=request.POST.get('password2')
+        email=request.POST.get('email')
+        if pass1==pass2:
+            user = User.objects.get(email=email)
+            user.set_password(pass1)
+            user.save()
+            return HttpResponse("""
+            <div
+                style="background-color: #28a745;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Success! Your operation was completed successfully.
+            </div>
+            """)
+        else:
+            return HttpResponse("""
+            <div
+                style="background-color: #dc3545;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Error! Password are not matched.
+            </div>
+            """)
+    else:
+        return HttpResponse("""
+        <div
+            style="background-color: #dc3545;
+            color: white; padding: 10px;
+            border-radius: 5px;
+            text-align: center;">
+            Error! Something went wrong.
+        </div>
+        <div style="margin-top: 40px;text-align: center;font-size: 12px;color: #666;">
+            <p><strong>Crop Care Pvt. Ltd.</strong><br>
+               TCSC Campus<br>
+               Kandivali East, Mumbai<br>
+               Email: thecropcare.team@gmail.com<br>
+               Phone: +91 6391348273</p>
+        </div>
+        """)
 
 @api_view(['POST'])
 def login_user(request):
@@ -212,6 +399,39 @@ def add_scheme(request):
         # schemes[i]['Eligibility'],schemes[i]['Documents'],
         # schemes[i]['How to Apply'],schemes[i]['Contact'],)
     return HttpResponse("scheme")
+@csrf_exempt
+def emailregister(request):
+    # text_content = render_to_string("email.txt",context={"my_variable": 42},)
+    email=request.POST.get("email")
+    url=request.POST.get('url')
+    text_content ="""To complete the registeration process, please fill the form given below:
+"""
+
+
+    html_content = render_to_string("emailregister.html",{'url':url})
+
+    msg = EmailMultiAlternatives(
+        "!! Welcome !!",
+        text_content,
+        settings.EMAIL_HOST_USER,
+        [email],
+        # headers={"List-Unsubscribe": "<mailto:unsub@example.com>"},
+)
+
+    msg.attach_alternative(html_content, "text/html")
+    msg.send()
+    return HttpResponse("Success")
+
+@csrf_exempt
+def sent(request):
+    print("Hello...")
+    if request.method=='POST':
+        email=request.POST.get('email')
+        print(email)
+        return HttpResponse("{{email}}")
+    else:
+        return HttpResponse("Failed")
+
 # @api_view(['POST']) # demo VIEW
 # def upload_image(request):
 #     if request.method == 'POST':
