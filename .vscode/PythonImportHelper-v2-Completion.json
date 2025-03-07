@@ -411,6 +411,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "timezone",
         "importPath": "django.utils",
         "description": "django.utils",
@@ -618,7 +626,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-&t#yk6gtrk##f5!qnjmc!=fs9oqjs=zm0qo_k4#8wfqftv-ujs'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-&t#yk6gtrk##f5!qnjmc!=fs9oqjs=zm0qo_k4#8wfqftv-ujs'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -627,7 +635,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-&t#yk6gtrk##f5!qnjmc!=fs9oqjs=zm0qo_k4#8wfqftv-ujs'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-&t#yk6gtrk##f5!qnjmc!=fs9oqjs=zm0qo_k4#8wfqftv-ujs'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -636,7 +644,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -717,7 +725,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\n#TIME_ZONE = 'UTC'\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\n#TIME_ZONE = 'UTC'\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -726,7 +734,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "#TIME_ZONE = 'UTC'\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'",
+        "peekOfCode": "#TIME_ZONE = 'UTC'\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -735,7 +743,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "TIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type",
+        "peekOfCode": "TIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -744,7 +752,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -753,7 +761,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -762,7 +770,7 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -771,16 +779,16 @@
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
         "detail": "CropCare.settings",
         "documentation": {}
     },
     {
-        "label": "ADMIN_MEDIA_PREFIX",
+        "label": "STATICFILES_DIRS",
         "kind": 5,
         "importPath": "CropCare.settings",
         "description": "CropCare.settings",
-        "peekOfCode": "ADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'",
+        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'",
         "detail": "CropCare.settings",
         "documentation": {}
     },
@@ -1068,7 +1076,7 @@
         "kind": 6,
         "importPath": "server.models",
         "description": "server.models",
-        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"profile\")\n    location = models.CharField(max_length=255)\n    mobile = models.CharField(max_length=18)\n    pincode = models.CharField(max_length=15, null=True, blank=True)\n    profile_image = models.ImageField(upload_to='media/', null=True, blank=True)\n    def __str__(self):\n        return self.user.username\nclass Post(models.Model):\n    user = models.ForeignKey(UserProfile, related_name='posts', on_delete=models.CASCADE)",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"profile\")\n    location = models.CharField(max_length=255)\n    mobile = models.CharField(max_length=18)\n    pincode = models.CharField(max_length=15, null=True, blank=True, default=\"0\")\n    profile_image = models.ImageField(upload_to='media/', null=True, blank=True)\n    def __str__(self):\n        return self.user.username\nclass Post(models.Model):\n    user = models.ForeignKey(UserProfile, related_name='posts', on_delete=models.CASCADE)",
         "detail": "server.models",
         "documentation": {}
     },
@@ -1149,7 +1157,7 @@
         "kind": 5,
         "importPath": "server.urls",
         "description": "server.urls",
-        "peekOfCode": "urlpatterns = [\n    path('email/', views.email, name='email'),\n    path('register/', views.register, name='register'),\n    path('login/', views.login_user, name='login'),\n    path(\"posts/\", views.post, name='post'),\n    path(\"profile/\", views.profile, name='profile'),\n    path('updateprofile/', views.updateprofile, name='updateprofile'),\n    path('schemes/', views.schemes,name='schemes'),\n    path('schemedetail/', views.schemedetail, name='schemedetail'),\n    path('shopping/', views.shopping, name='shopping'),",
+        "peekOfCode": "urlpatterns = [\n    path('emailregister/', views.emailregister, name='emailregister'),\n    path('forgetpassword/',views.forgetpassword, name='forgetpassword'),\n    path('register/', views.register, name='register'),\n    path('login/', views.login_user, name='login'),\n    path(\"posts/\", views.post, name='post'),\n    path(\"profile/\", views.profile, name='profile'),\n    path('updateprofile/', views.updateprofile, name='updateprofile'),\n    path('schemes/', views.schemes,name='schemes'),\n    path('schemedetail/', views.schemedetail, name='schemedetail'),",
         "detail": "server.urls",
         "documentation": {}
     },
@@ -1167,7 +1175,16 @@
         "kind": 2,
         "importPath": "server.views",
         "description": "server.views",
-        "peekOfCode": "def base64_to_image(image_base64,format=\"JPEG\"):\n    image_data = base64.b64decode(image_base64)\n    image = Image.open(BytesIO(image_data))\n    image_io = BytesIO()\n    image.save(image_io, format=format)\n    image_io.seek(0)\n    return image_io\n@api_view(['POST'])\ndef register(request):\n    if request.method == 'POST':",
+        "peekOfCode": "def base64_to_image(image_base64,format=\"JPEG\"):\n    image_data = base64.b64decode(image_base64)\n    image = Image.open(BytesIO(image_data))\n    image_io = BytesIO()\n    image.save(image_io, format=format)\n    image_io.seek(0)\n    return image_io\n@api_view(['POST'])\ndef emailregister(request):\n    if request.method=='POST':",
+        "detail": "server.views",
+        "documentation": {}
+    },
+    {
+        "label": "emailregister",
+        "kind": 2,
+        "importPath": "server.views",
+        "description": "server.views",
+        "peekOfCode": "def emailregister(request):\n    if request.method=='POST':\n        email=request.POST.get('email')\n        # email='pryogendra95449@gmail.com'\n        text_content =\"\"\"Please fill the form given below:\n    \"\"\"\n        html_content = render_to_string(\"emailregister.html\")\n        try:\n            msg = EmailMultiAlternatives(\n                \"Register\",",
         "detail": "server.views",
         "documentation": {}
     },
@@ -1176,7 +1193,25 @@
         "kind": 2,
         "importPath": "server.views",
         "description": "server.views",
-        "peekOfCode": "def register(request):\n    if request.method == 'POST':\n        serializer = UserRegistrationSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return JsonResponse({'message': 'User registered successfully!'}, status=status.HTTP_201_CREATED)\n        return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n@api_view(['POST'])\ndef login_user(request):\n    if request.method == 'POST':",
+        "peekOfCode": "def register(request):\n    if request.method == 'POST':\n        serializer = UserRegistrationSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return HttpResponse(\"\"\"\n            <div\n                style=\"background-color: #28a745;\n                color: white; padding: 10px;\n                border-radius: 5px;",
+        "detail": "server.views",
+        "documentation": {}
+    },
+    {
+        "label": "forgetpassword",
+        "kind": 2,
+        "importPath": "server.views",
+        "description": "server.views",
+        "peekOfCode": "def forgetpassword(request):\n    if request.method == 'POST':\n        email = request.POST.get('email')\n        try:\n            user = User.objects.get(email=email)\n            text_content = \"\"\"Please fill the form given below:\"\"\"\n            html_content = render_to_string(\"forgetpassword.html\")\n            try:\n                msg = EmailMultiAlternatives(\n                    \"Reset Password\",",
+        "detail": "server.views",
+        "documentation": {}
+    },
+    {
+        "label": "newPassword",
+        "kind": 2,
+        "importPath": "server.views",
+        "description": "server.views",
+        "peekOfCode": "def newPassword(request):\n    if request.method=='POST':\n        pass1=request.POST.get('password1')\n        pass2=request.POST.get('password2')\n        email=request.POST.get('email')\n        if pass1==pass2:\n            user = User.objects.get(email=email)\n            user.set_password(pass1)\n            user.save()\n            return HttpResponse(\"\"\"",
         "detail": "server.views",
         "documentation": {}
     },
@@ -1271,11 +1306,11 @@
         "documentation": {}
     },
     {
-        "label": "email",
+        "label": "emailregister",
         "kind": 2,
         "importPath": "server.views",
         "description": "server.views",
-        "peekOfCode": "def email(request):\n    # text_content = render_to_string(\"email.txt\",context={\"my_variable\": 42},)\n    text_content =\"\"\"HI HOW ARE YOU ? with us! To complete the verification process and confirm your email address, please click the link below:\n\"\"\"\n    html_content = render_to_string(\"temp.html\")\n    msg = EmailMultiAlternatives(\n        \"Subject here\",\n        text_content,\n        settings.EMAIL_HOST_USER,\n        [\"pryogendra95449@gmail.com\"],",
+        "peekOfCode": "def emailregister(request):\n    # text_content = render_to_string(\"email.txt\",context={\"my_variable\": 42},)\n    email=request.POST.get(\"email\")\n    url=request.POST.get('url')\n    text_content =\"\"\"To complete the registeration process, please fill the form given below:\n\"\"\"\n    html_content = render_to_string(\"emailregister.html\",{'url':url})\n    msg = EmailMultiAlternatives(\n        \"!! Welcome !!\",\n        text_content,",
         "detail": "server.views",
         "documentation": {}
     },
