@@ -17,11 +17,51 @@
         "documentation": {}
     },
     {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -73,11 +113,283 @@
         "documentation": {}
     },
     {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -354,6 +666,30 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "django.utils.timezone",
         "kind": 6,
         "isExtraImport": true,
@@ -371,11 +707,35 @@
         "documentation": {}
     },
     {
+        "label": "site",
+        "importPath": "django.contrib.admin.sites",
+        "description": "django.contrib.admin.sites",
+        "isExtraImport": true,
+        "detail": "django.contrib.admin.sites",
+        "documentation": {}
+    },
+    {
         "label": "AdminSite",
         "importPath": "django.contrib.admin",
         "description": "django.contrib.admin",
         "isExtraImport": true,
         "detail": "django.contrib.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AdminSite",
+        "importPath": "django.contrib.admin",
+        "description": "django.contrib.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -419,11 +779,59 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "timezone",
         "importPath": "django.utils",
         "description": "django.utils",
         "isExtraImport": true,
         "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -451,6 +859,30 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -464,6 +896,30 @@
         "description": "django.conf.urls.static",
         "isExtraImport": true,
         "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -499,11 +955,43 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
         "isExtraImport": true,
         "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "importPath": "CropCare.settings",
+        "description": "CropCare.settings",
+        "isExtraImport": true,
+        "detail": "CropCare.settings",
         "documentation": {}
     },
     {
@@ -528,6 +1016,30 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
         "documentation": {}
     },
     {
@@ -556,6 +1068,22 @@
         "documentation": {}
     },
     {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "Image",
         "importPath": "PIL",
         "description": "PIL",
@@ -569,6 +1097,22 @@
         "description": "django.core.files.base",
         "isExtraImport": true,
         "detail": "django.core.files.base",
+        "documentation": {}
+    },
+    {
+        "label": "ContentFile",
+        "importPath": "django.core.files.base",
+        "description": "django.core.files.base",
+        "isExtraImport": true,
+        "detail": "django.core.files.base",
+        "documentation": {}
+    },
+    {
+        "label": "Paginator",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
         "documentation": {}
     },
     {
@@ -593,6 +1137,30 @@
         "description": "django.core.mail",
         "isExtraImport": true,
         "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
         "documentation": {}
     },
     {
@@ -898,6 +1466,726 @@
         "description": "CropCare.wsgi",
         "peekOfCode": "#application = Cling(get_wsgi_application())",
         "detail": "CropCare.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.asgi",
+        "description": "CropCareServer.CropCare.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "CropCareServer.CropCare.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-&t#yk6gtrk##f5!qnjmc!=fs9oqjs=zm0qo_k4#8wfqftv-ujs'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-&t#yk6gtrk##f5!qnjmc!=fs9oqjs=zm0qo_k4#8wfqftv-ujs'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'server.apps.ServerConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'CropCare.urls'",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "ROOT_URLCONF = 'CropCare.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR,'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR,'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'CropCare.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\n#TIME_ZONE = 'UTC'\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#TIME_ZONE",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "#TIME_ZONE = 'UTC'\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "TIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ADMIN_MEDIA_PREFIX",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "ADMIN_MEDIA_PREFIX = '/static/admin/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#media urls\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n#Email\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "EMAIL_HOST_USER = \"thecropcare.team@gmail.com\"\nEMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.settings",
+        "description": "CropCareServer.CropCare.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"zggkqkpjzmpbgdzq\"",
+        "detail": "CropCareServer.CropCare.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.urls",
+        "description": "CropCareServer.CropCare.urls",
+        "peekOfCode": "urlpatterns = [\n    path('server_admin/', admin.site.urls),\n    path('abcd/',include('server.urls'))\n]",
+        "detail": "CropCareServer.CropCare.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.wsgi",
+        "description": "CropCareServer.CropCare.wsgi",
+        "peekOfCode": "application = get_wsgi_application()\n#application = Cling(get_wsgi_application())",
+        "detail": "CropCareServer.CropCare.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "#application",
+        "kind": 5,
+        "importPath": "CropCareServer.CropCare.wsgi",
+        "description": "CropCareServer.CropCare.wsgi",
+        "peekOfCode": "#application = Cling(get_wsgi_application())",
+        "detail": "CropCareServer.CropCare.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0001_initial",
+        "description": "CropCareServer.server.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('username', models.CharField(max_length=150, primary_key=True, serialize=False, unique=True)),\n                ('password', models.CharField(max_length=255)),",
+        "detail": "CropCareServer.server.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0002_userprofile_delete_user",
+        "description": "CropCareServer.server.migrations.0002_userprofile_delete_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='UserProfile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "CropCareServer.server.migrations.0002_userprofile_delete_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0003_alter_userprofile_pincode_and_more",
+        "description": "CropCareServer.server.migrations.0003_alter_userprofile_pincode_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0002_userprofile_delete_user'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='userprofile',\n            name='pincode',\n            field=models.CharField(blank=True, max_length=15, null=True),\n        ),",
+        "detail": "CropCareServer.server.migrations.0003_alter_userprofile_pincode_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0004_alter_userprofile_mobile",
+        "description": "CropCareServer.server.migrations.0004_alter_userprofile_mobile",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0003_alter_userprofile_pincode_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='userprofile',\n            name='mobile',\n            field=models.CharField(max_length=18),\n        ),",
+        "detail": "CropCareServer.server.migrations.0004_alter_userprofile_mobile",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0005_post",
+        "description": "CropCareServer.server.migrations.0005_post",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0004_alter_userprofile_mobile'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Post',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(upload_to='posts/')),",
+        "detail": "CropCareServer.server.migrations.0005_post",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0006_remove_post_posted_ago_post_posted_at",
+        "description": "CropCareServer.server.migrations.0006_remove_post_posted_ago_post_posted_at",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0005_post'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='post',\n            name='posted_ago',\n        ),\n        migrations.AddField(",
+        "detail": "CropCareServer.server.migrations.0006_remove_post_posted_ago_post_posted_at",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0007_alter_post_image_alter_userprofile_profile_image",
+        "description": "CropCareServer.server.migrations.0007_alter_post_image_alter_userprofile_profile_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0006_remove_post_posted_ago_post_posted_at'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='post',\n            name='image',\n            field=models.BinaryField(blank=True, null=True),\n        ),",
+        "detail": "CropCareServer.server.migrations.0007_alter_post_image_alter_userprofile_profile_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0008_alter_post_image_alter_userprofile_profile_image",
+        "description": "CropCareServer.server.migrations.0008_alter_post_image_alter_userprofile_profile_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0007_alter_post_image_alter_userprofile_profile_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='post',\n            name='image',\n            field=models.ImageField(default=23, upload_to='posts/'),\n            preserve_default=False,",
+        "detail": "CropCareServer.server.migrations.0008_alter_post_image_alter_userprofile_profile_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0009_post_parent_alter_post_caption_notification",
+        "description": "CropCareServer.server.migrations.0009_post_parent_alter_post_caption_notification",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0008_alter_post_image_alter_userprofile_profile_image'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='post',\n            name='parent',\n            field=models.CharField(blank=True, max_length=5555, null=True),\n        ),",
+        "detail": "CropCareServer.server.migrations.0009_post_parent_alter_post_caption_notification",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0010_govt_scheme",
+        "description": "CropCareServer.server.migrations.0010_govt_scheme",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0009_post_parent_alter_post_caption_notification'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Govt_Scheme',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(blank=True, max_length=5000, null=True)),",
+        "detail": "CropCareServer.server.migrations.0010_govt_scheme",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0011_post_data_type",
+        "description": "CropCareServer.server.migrations.0011_post_data_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0010_govt_scheme'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='post',\n            name='data_type',\n            field=models.CharField(default='jpg', max_length=200),\n        ),",
+        "detail": "CropCareServer.server.migrations.0011_post_data_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0012_shopping",
+        "description": "CropCareServer.server.migrations.0012_shopping",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0011_post_data_type'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Shopping',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('type', models.CharField(max_length=200)),",
+        "detail": "CropCareServer.server.migrations.0012_shopping",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0013_feedback",
+        "description": "CropCareServer.server.migrations.0013_feedback",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0012_shopping'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='FeedBack',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=500)),",
+        "detail": "CropCareServer.server.migrations.0013_feedback",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0014_rename_feedback_contactus",
+        "description": "CropCareServer.server.migrations.0014_rename_feedback_contactus",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0013_feedback'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='FeedBack',\n            new_name='ContactUs',\n        ),\n    ]",
+        "detail": "CropCareServer.server.migrations.0014_rename_feedback_contactus",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CropCareServer.server.migrations.0015_feedback",
+        "description": "CropCareServer.server.migrations.0015_feedback",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('server', '0014_rename_feedback_contactus'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='FeedBack',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=200)),",
+        "detail": "CropCareServer.server.migrations.0015_feedback",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_title",
+        "kind": 5,
+        "importPath": "CropCareServer.server.admin",
+        "description": "CropCareServer.server.admin",
+        "peekOfCode": "admin.site.site_title = \"CropCare Admin\"\nadmin.site.site_header = \"Welcome to CropCare Admin Panel\"\nadmin.site.index_title = \"Dashboard\"\n#Display the custom columns\n# class ProfileAdmin(admin.ModelAdmin):\n#     list_display = ('location','mobile')\n#admin.site.register(UserProfile,ProfileAdmin)\nadmin.site.register(UserProfile)\nadmin.site.register([Post,Notification])\nadmin.site.register(Govt_Scheme)",
+        "detail": "CropCareServer.server.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_header",
+        "kind": 5,
+        "importPath": "CropCareServer.server.admin",
+        "description": "CropCareServer.server.admin",
+        "peekOfCode": "admin.site.site_header = \"Welcome to CropCare Admin Panel\"\nadmin.site.index_title = \"Dashboard\"\n#Display the custom columns\n# class ProfileAdmin(admin.ModelAdmin):\n#     list_display = ('location','mobile')\n#admin.site.register(UserProfile,ProfileAdmin)\nadmin.site.register(UserProfile)\nadmin.site.register([Post,Notification])\nadmin.site.register(Govt_Scheme)\nadmin.site.register(Shopping)",
+        "detail": "CropCareServer.server.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.index_title",
+        "kind": 5,
+        "importPath": "CropCareServer.server.admin",
+        "description": "CropCareServer.server.admin",
+        "peekOfCode": "admin.site.index_title = \"Dashboard\"\n#Display the custom columns\n# class ProfileAdmin(admin.ModelAdmin):\n#     list_display = ('location','mobile')\n#admin.site.register(UserProfile,ProfileAdmin)\nadmin.site.register(UserProfile)\nadmin.site.register([Post,Notification])\nadmin.site.register(Govt_Scheme)\nadmin.site.register(Shopping)\nadmin.site.register([Contactus,FeedBack])",
+        "detail": "CropCareServer.server.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ServerConfig",
+        "kind": 6,
+        "importPath": "CropCareServer.server.apps",
+        "description": "CropCareServer.server.apps",
+        "peekOfCode": "class ServerConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'server'",
+        "detail": "CropCareServer.server.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfile",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"profile\")\n    location = models.CharField(max_length=255)\n    mobile = models.CharField(max_length=18)\n    pincode = models.CharField(max_length=15, null=True, blank=True, default=\"0\")\n    profile_image = models.ImageField(upload_to='media/', null=True, blank=True)\n    def __str__(self):\n        return self.user.username\nclass Post(models.Model):\n    user = models.ForeignKey(UserProfile, related_name='posts', on_delete=models.CASCADE)",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class Post(models.Model):\n    user = models.ForeignKey(UserProfile, related_name='posts', on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='posts/')\n    data_type=models.CharField(max_length=200, default='jpg')\n    caption = models.CharField(max_length=9255)\n    likes = models.IntegerField()\n    comments = models.IntegerField()\n    parent=models.CharField(max_length=5555,blank=True,null=True)\n    posted_at = models.DateTimeField(default=timezone.now)\n    def __str__(self):",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Govt_Scheme",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class Govt_Scheme(models.Model):\n    title=models.CharField(max_length=5000, blank=True, null=True)\n    discription=models.TextField()\n    benefit=models.TextField()\n    eligibility=models.TextField()\n    document=models.TextField()\n    apply_process=models.TextField()\n    contact=models.CharField(max_length=5000, blank=True, null=True)\n    def __str__(self):\n        return self.title",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Shopping",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class Shopping(models.Model):\n    type=models.CharField(max_length=200)\n    title=models.CharField(max_length=500)\n    image=models.ImageField(upload_to='Shopping/', null=True, blank=True)\n    info1=models.TextField()\n    info2=models.TextField()\n    def __str__(self):\n        return f'{self.title} : {self.type}'\nclass Contactus(models.Model):\n    name=models.CharField(max_length=500)",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Contactus",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class Contactus(models.Model):\n    name=models.CharField(max_length=500)\n    email=models.CharField(max_length=1000)\n    message=models.TextField()\n    def __str__(self):\n        return f'{self.name} : {self.message[:20]}...'\nclass FeedBack(models.Model):\n    name=models.CharField(max_length=200)\n    message=models.TextField()\n    def __str__(self):",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "FeedBack",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class FeedBack(models.Model):\n    name=models.CharField(max_length=200)\n    message=models.TextField()\n    def __str__(self):\n        return f'{self.name} : {self.message[:20]}...'\nclass Notification(models.Model):\n    user=models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='notification')\n    message=models.CharField(max_length=700, blank=True, null=True)",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "kind": 6,
+        "importPath": "CropCareServer.server.models",
+        "description": "CropCareServer.server.models",
+        "peekOfCode": "class Notification(models.Model):\n    user=models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='notification')\n    message=models.CharField(max_length=700, blank=True, null=True)",
+        "detail": "CropCareServer.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegistrationSerializer",
+        "kind": 6,
+        "importPath": "CropCareServer.server.serializers",
+        "description": "CropCareServer.server.serializers",
+        "peekOfCode": "class UserRegistrationSerializer(serializers.ModelSerializer):\n    location = serializers.CharField(max_length=255)\n    mobile = serializers.CharField(max_length=15)\n    pincode = serializers.CharField(max_length=15, allow_null=True)\n    profile_image = serializers.ImageField(required=False, allow_null=True)\n    class Meta:\n        model = User\n        fields = ['username', 'password', 'email', 'location', 'mobile', 'pincode', 'profile_image']\n    def create(self, validated_data):\n        location = validated_data.pop('location')",
+        "detail": "CropCareServer.server.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSerializer",
+        "kind": 6,
+        "importPath": "CropCareServer.server.serializers",
+        "description": "CropCareServer.server.serializers",
+        "peekOfCode": "class UserLoginSerializer(serializers.Serializer):\n    username = serializers.CharField(max_length=150)\n    password = serializers.CharField(write_only=True)\n    def validate(self, atr):\n        username = atr.get('username')\n        password = atr.get('password')\n        user = User.objects.filter(username=username).first()\n        if user and user.check_password(password):\n            return atr\n        raise serializers.ValidationError('Invalid username or password')",
+        "detail": "CropCareServer.server.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "CropCareServer.server.urls",
+        "description": "CropCareServer.server.urls",
+        "peekOfCode": "urlpatterns = [\n    path('emailregister/', views.emailregister, name='emailregister'),\n    path('forgetpassword/',views.forgetpassword, name='forgetpassword'),\n    path('register/', views.register, name='register'),\n    path('login/', views.login_user, name='login'),\n    path(\"posts/\", views.post, name='post'),\n    path(\"profile/\", views.profile, name='profile'),\n    path('updateprofile/', views.updateprofile, name='updateprofile'),\n    path('schemes/', views.schemes,name='schemes'),\n    path('schemedetail/', views.schemedetail, name='schemedetail'),",
+        "detail": "CropCareServer.server.urls",
+        "documentation": {}
+    },
+    {
+        "label": "image_to_base64",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def image_to_base64(urlPath):\n    with open(urlPath, 'rb') as image_file:\n        image_data = base64.b64encode(image_file.read()).decode('utf-8')\n        return image_data\ndef base64_to_image(image_base64,format=\"JPEG\"):\n    image_data = base64.b64decode(image_base64)\n    image = Image.open(BytesIO(image_data))\n    image_io = BytesIO()\n    image.save(image_io, format=format)\n    image_io.seek(0)",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "base64_to_image",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def base64_to_image(image_base64,format=\"JPEG\"):\n    image_data = base64.b64decode(image_base64)\n    image = Image.open(BytesIO(image_data))\n    image_io = BytesIO()\n    image.save(image_io, format=format)\n    image_io.seek(0)\n    return image_io\n@api_view(['POST'])\ndef emailregister(request):\n    if request.method=='POST':",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "emailregister",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def emailregister(request):\n    if request.method=='POST':\n        email=request.POST.get('email')\n        # email='pryogendra95449@gmail.com'\n        text_content =\"\"\"Please fill the form given below:\n    \"\"\"\n        html_content = render_to_string(\"emailregister.html\")\n        try:\n            msg = EmailMultiAlternatives(\n                \"Register\",",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def register(request):\n    if request.method == 'POST':\n        serializer = UserRegistrationSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return HttpResponse(\"\"\"\n            <div\n                style=\"background-color: #28a745;\n                color: white; padding: 10px;\n                border-radius: 5px;",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "forgetpassword",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def forgetpassword(request):\n    if request.method == 'POST':\n        email = request.POST.get('email')\n        try:\n            user = User.objects.get(email=email)\n            text_content = \"\"\"Please fill the form given below:\"\"\"\n            html_content = render_to_string(\"forgetpassword.html\")\n            try:\n                msg = EmailMultiAlternatives(\n                    \"Reset Password\",",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "newPassword",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def newPassword(request):\n    if request.method=='POST':\n        pass1=request.POST.get('password1')\n        pass2=request.POST.get('password2')\n        email=request.POST.get('email')\n        if pass1==pass2:\n            user = User.objects.get(email=email)\n            user.set_password(pass1)\n            user.save()\n            return HttpResponse(\"\"\"",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def login_user(request):\n    if request.method == 'POST':\n        serializer = UserLoginSerializer(data=request.data)\n        if serializer.is_valid():\n            return JsonResponse({\"message\": \"Login successful!\"}, status=status.HTTP_200_OK)\n        return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n@api_view(['POST'])\ndef post(request):\n    if request.method=='POST':\n        data=[]",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "post",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def post(request):\n    if request.method=='POST':\n        data=[]\n        CURRENT_USER = request.POST.get('CURRENT_USER')\n        user=User.objects.get(username=CURRENT_USER)\n        obj=UserProfile.objects.get(user=user)\n        posts = Post.objects.all()\n        for post in posts:\n            p={\n            'post_id':post.id,",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def profile(request):\n    if request.method=='POST':\n        CURRENT_USER = request.POST.get('CURRENT_USER')\n        user=User.objects.get(username=CURRENT_USER)\n        obj=UserProfile.objects.get(user=user)\n        data={\n            'username':obj.user.username,\n            'email':user.email,\n            'mobile':obj.mobile,\n            'location':obj.location,",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "updateprofile",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def updateprofile(request):\n    try :\n        if request.method=='POST':\n            CURRENT_USER = request.POST.get('CURRENT_USER')\n            file_name=f'{CURRENT_USER}_profile.jpg'\n            email=request.POST.get('email')\n            mobile=request.POST.get('mobile')\n            location=request.POST.get('location')\n            pincode=request.POST.get('pincode')\n            image_base64=request.POST.get('profile_image')",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "schemes",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def schemes(request):\n    if request.method=='POST':\n        data=[]\n        obj=Govt_Scheme.objects.all()\n        for sch in obj:\n            data.append(sch.title)\n        return JsonResponse({'data':data},status=status.HTTP_200_OK)\n@api_view(['POST'])\ndef schemedetail(request):\n    if request.method=='POST':",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "schemedetail",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def schemedetail(request):\n    if request.method=='POST':\n        id=request.POST.get('id')\n        obj=Govt_Scheme.objects.filter(id=id).first()\n        print(\"Govt : \",obj)\n        if obj is None:\n            print(\"Govt_Scheme not found\")\n        else:\n            data={\n            'title':obj.title,",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "shopping",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def shopping(request):\n    if request.method=='POST':\n        data=[]\n        prods=Shopping.objects.all().order_by('type')\n        for prod in prods:\n            p={\n            'product_id':prod.id,\n            'type':prod.type,\n            'title':prod.title,\n            'image':image_to_base64(prod.image.path) if prod.image else None,",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "contactus",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def contactus(request):\n    if request.method=='POST':\n        name=request.POST.get('name')\n        email=request.POST.get('email')\n        message=request.POST.get('message')\n        contact=ContactUs(name=name, email=email, message=message)\n        contact.save()\n        return JsonResponse({'message':'sucess'},status=status.HTTP_200_OK)\n@api_view(['POST'])\ndef feedback(request):",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "feedback",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def feedback(request):\n    if request.method=='POST':\n        name=request.POST.get('name')\n        message=request.POST.get('message')\n        feed=FeedBack(name=name, message=message)\n        feed.save()\n        return JsonResponse({'message':'sucess'}, status=status.HTTP_200_OK)\ndef add_scheme(request):\n    schemes = {\n            \"Gramin Bhandaran Yojana\": {",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_scheme",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def add_scheme(request):\n    schemes = {\n            \"Gramin Bhandaran Yojana\": {\n                \"Description\": \"Promotes the construction of storage facilities for farmers.\",\n                \"Benefits\": \"Financial support for building warehouses.\",\n                \"Eligibility\": \"Farmers, NGOs, cooperatives.\",\n                \"Documents\": \"Project proposal, Aadhaar, land records.\",\n                \"How to Apply\": \"Apply through nabard.org or district agriculture offices.\",\n                \"Contact\": \"1800-123-1551\"\n            }",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "emailregister",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def emailregister(request):\n    # text_content = render_to_string(\"email.txt\",context={\"my_variable\": 42},)\n    email=request.POST.get(\"email\")\n    url=request.POST.get('url')\n    text_content =\"\"\"To complete the registeration process, please fill the form given below:\n\"\"\"\n    html_content = render_to_string(\"emailregister.html\",{'url':url})\n    msg = EmailMultiAlternatives(\n        \"!! Welcome !!\",\n        text_content,",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "sent",
+        "kind": 2,
+        "importPath": "CropCareServer.server.views",
+        "description": "CropCareServer.server.views",
+        "peekOfCode": "def sent(request):\n    print(\"Hello...\")\n    if request.method=='POST':\n        email=request.POST.get('email')\n        print(email)\n        return HttpResponse(\"{{email}}\")\n    else:\n        return HttpResponse(\"Failed\")\n# @api_view(['POST']) # demo VIEW\n# def upload_image(request):",
+        "detail": "CropCareServer.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CropCareServer.manage",
+        "description": "CropCareServer.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CropCare.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "CropCareServer.manage",
         "documentation": {}
     },
     {
