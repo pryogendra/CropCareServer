@@ -399,6 +399,7 @@ def add_scheme(request):
         # schemes[i]['Eligibility'],schemes[i]['Documents'],
         # schemes[i]['How to Apply'],schemes[i]['Contact'],)
     return HttpResponse("scheme")
+
 @csrf_exempt
 def emailregister(request):
     # text_content = render_to_string("email.txt",context={"my_variable": 42},)
