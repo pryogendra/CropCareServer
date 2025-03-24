@@ -17,6 +17,7 @@ from django.core.mail import send_mail, EmailMultiAlternatives
 from django.conf import settings
 from django.template.loader import render_to_string
 from django.contrib.auth.models import User
+from django.contrib.auth.hashers import make_password
 
 
 def image_to_base64(urlPath):
@@ -37,8 +38,7 @@ def emailregister(request):
     if request.method=='POST':
         email=request.POST.get('email')
         # email='pryogendra95449@gmail.com'
-        text_content ="""Please fill the form given below:
-    """
+        text_content ="""Please fill the form given below:"""
         html_content = render_to_string("emailregister.html")
         try:
             msg = EmailMultiAlternatives(
@@ -55,11 +55,12 @@ def emailregister(request):
                 color: white; padding: 10px;
                 border-radius: 5px;
                 text-align: center;">
-                Success! Your operation was completed successfully.
+                Success! Your operation completed successfully.
             </div>
             """)
             # return JsonResponse(status=status.HTTP_200_OK)
-        except:
+        except Exception as e:
+            print(e)
             return HttpResponse("""
             <div
                 style="background-color: #dc3545;
@@ -82,7 +83,7 @@ def register(request):
                 color: white; padding: 10px;
                 border-radius: 5px;
                 text-align: center;">
-                Success! Your registration was completed successfully.
+                Success! Your registration completed successfully.
             </div>
             """)
         return HttpResponse("""
@@ -99,11 +100,10 @@ def register(request):
 def forgetpassword(request):
     if request.method == 'POST':
         email = request.POST.get('email')
-
+        text_content = """Please fill the form given below:"""
+        html_content = render_to_string("forgetpassword.html")
         try:
             user = User.objects.get(email=email)
-            text_content = """Please fill the form given below:"""
-            html_content = render_to_string("forgetpassword.html")
             try:
                 msg = EmailMultiAlternatives(
                     "Reset Password",
@@ -176,6 +176,38 @@ def forgetpassword(request):
         </div>
         """)
 
+@api_view(["POST"])
+def passwordReset(request):
+    if request.method == 'POST':
+        email=request.POST.get('email')
+        pass1 = request.POST.get('pass1')
+        pass2 = request.POST.get('pass2')
+
+        user = User.objects.get(email = email)
+        if user and (pass1 == pass2):
+            user.password = make_password(password1)
+            user.save()
+            return HttpResponse("""
+            <div
+                style="background-color: #28a745;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Success! Your password is reset successfully.
+            </div>
+            """)
+        else :
+            return HttpResponse("""
+            <div
+                style="background-color: #dc3545;
+                color: white; padding: 10px;
+                border-radius: 5px;
+                text-align: center;">
+                Error! Something went wrong.
+            </div>
+            """)
+
+    pass
 @api_view(['POST'])
 def newPassword(request):
     if request.method=='POST':
@@ -432,41 +464,3 @@ def sent(request):
         return HttpResponse("{{email}}")
     else:
         return HttpResponse("Failed")
-
-# @api_view(['POST']) # demo VIEW
-# def upload_image(request):
-#     if request.method == 'POST':
-#         try:
-#             image_base64 = request.POST.get('image')
-#             file_name=request.POST.get('file_name')
-#
-#             image_data = base64.b64decode(image_base64)
-#             image = Image.open(BytesIO(image_data))
-#             user = UserProfile.objects.get(id=1)
-#             image_io = BytesIO()
-#             image.save(image_io, format='JPEG')
-#             image_io.seek(0)
-#
-#             user.profile_image.save(file_name, ContentFile(image_io.read()), save=True)
-#             print("Image saved successfully:", user.profile_image)
-#             return JsonResponse({'status': 'success'})
-#
-#         except Exception as e:
-#             print("ERROR............................",e)
-#             return JsonResponse({'status': 'error', 'message': str(e)})
-#
-#         return JsonResponse({'status': 'error', 'message': 'Invalid request method'})
-#
-# @csrf_exempt # demo VIEW
-# def get_image(request):
-#     try:
-#         user = User.objects.get(username='yogi')
-#         image_obj = UserProfile.objects.get(user=user)
-#         with open(image_obj.profile_image.path, 'rb') as image_file:
-#             image_data = base64.b64encode(image_file.read()).decode('utf-8')
-#         return JsonResponse({'status': 'success', 'image': image_data})
-#     except UserProfile.DoesNotExist:
-#         return JsonResponse({'status': 'error', 'message': 'Image not found.'}, status=404)
-#     except Exception as e:
-#         print("Error : ",e)
-#         return JsonResponse({'status': 'error', 'message': str(e)}, status=500)
