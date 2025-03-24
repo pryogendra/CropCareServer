@@ -12,9 +12,7 @@ The project uses Django REST framework to provide API endpoints and can be easil
 2. [Setup](#setup)
 3. [Usage](#usage)
 4. [Configuration](#configuration)
-5. [Testing](#testing)
-6. [Deployment](#deployment)
-7. [License](#license)
+5. [Deployment](#deployment)
 
 ## Installation
 
